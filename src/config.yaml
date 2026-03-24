@@ -1,0 +1,14 @@
+app:
+  name: test-migration-project
+  version: "1.0.0"
+  port: 8080
+  environment: production
+
+database:
+  host: localhost
+  port: 5432
+  name: app_db
+
+logging:
+  level: info
+  format: json
