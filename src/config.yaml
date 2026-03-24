@@ -1,14 +1,18 @@
 app:
   name: test-migration-project
-  version: "1.0.0"
-  port: 8080
+  version: "2.0.0"
+  port: 3000
   environment: production
 
 database:
-  host: localhost
+  host: db.example.com
   port: 5432
   name: app_db
+  pool_size: 10
 
 logging:
-  level: info
+  level: debug
   format: json
+
+redis:
+  url: redis://localhost:6379
